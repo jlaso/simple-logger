@@ -1,0 +1,4 @@
+logger:
+    path: "%project_dir%/cache/logger.log"
+    level: info,debug,error
+

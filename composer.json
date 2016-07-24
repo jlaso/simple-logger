@@ -1,0 +1,29 @@
+{
+    "name": "jlaso/simple-logger",
+    "description": "A simple logger for your PHP apps",
+    "keywords": ["log", "logger"],
+    "homepage": "https://github.com/jlaso/simple-logger",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joseluis Laso",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.9",
+        "symfony/yaml": "2.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0",
+        "symfony/console":  "2.4.1",
+        "mockery/mockery": "0.9.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "JLaso\\SimpleLogger\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}

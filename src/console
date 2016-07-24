@@ -1,0 +1,18 @@
+#!/usr/bin/env php
+<?php
+
+namespace JLaso\SimpleLogger;
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use JLaso\SimpleLogger\Command\FilterCommand;
+use Symfony\Component\Yaml\Yaml;
+use Symfony\Component\Console\Application;
+
+$application = new Application();
+$application->addCommands(
+    array(
+        new FilterCommand(),
+    )
+);
+$application->run();
