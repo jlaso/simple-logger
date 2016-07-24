@@ -58,3 +58,44 @@ Logger::info('Just finishing the execution of the program in '.intval((microtime
 ```
 
 
+## Implementing the filter command in your app
+ 
+You can see an example of how to do that (https://github.com/jlaso/simple-stats-demo/tree/master/app)[https://github.com/jlaso/simple-stats-demo/tree/master/app]
+
+```
+<?php
+
+namespace App\Command;
+
+use JLaso\SimpleLogger\Command\FilterCommand;
+
+class FilterLogCommand extends FilterCommand
+{
+
+}
+```
+
+add it to app/console
+
+```
+#!/usr/bin/env php
+<?php
+
+namespace JLaso\SimpleStats;
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use App\Command\FilterLogCommand;   <======
+use App\Command\PostDeployCommand;
+use Symfony\Component\Console\Application;
+
+$application = new Application();
+$application->addCommands(
+    array(
+        new PostDeployCommand(),
+        new FilterLogCommand(),    <======
+    )
+);
+$application->run();
+```
+
