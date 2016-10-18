@@ -7,7 +7,7 @@ You need only to require this package in your project ```composer require jlaso/
 
 # Configuration (optional)
 
-In order to let know the library where it can put it's database file and other things related with setup you can copy the distribution file config-stats-base.yml.dist in the root
+In order to let know the library where can put its database file and other things related with setup you can copy the distribution file config-stats-base.yml.dist in the root
 of your project with the config-stats-base.yml
 
 This file contains:
