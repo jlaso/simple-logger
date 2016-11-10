@@ -7,12 +7,12 @@ You need only to require this package in your project ```composer require jlaso/
 
 # Configuration (optional)
 
-In order to let know the library where can put its database file and other things related with setup you can copy the distribution file config-stats-base.yml.dist in the root
-of your project with the config-stats-base.yml
+In order to let know the library where can put its database file and other things related with setup you can copy the distribution file `config-simple-logger.yml.dist` in the root of your project with the `config-simple-logger.yml`
 
 This file contains:
 
 ```
+# vendor/jlaso/simple-logger/config-simple-logger.yml.dist
 logger:
     path: "%project_dir%/cache/logger.log"
     levels: error,info,debug    
