@@ -1,7 +1,7 @@
 {
     "name": "jlaso/simple-logger",
     "description": "A simple logger for your PHP apps",
-    "keywords": ["log", "logger"],
+    "keywords": [ "log", "logger" ],
     "homepage": "https://github.com/jlaso/simple-logger",
     "type": "library",
     "license": "MIT",
