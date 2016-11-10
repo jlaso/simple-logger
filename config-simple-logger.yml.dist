@@ -1,4 +1,5 @@
 logger:
-    path: "%project_dir%/cache/logger.log"
+    path: "%project_dir%/cache/logger-%date%.log"
     level: info,debug,error
+    date_format: "Y-m-d"
 

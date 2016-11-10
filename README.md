@@ -1,4 +1,5 @@
 # simple-logger
+
 A simple logger system
 
 # Installation
@@ -14,9 +15,9 @@ This file contains:
 ```
 # vendor/jlaso/simple-logger/config-simple-logger.yml.dist
 logger:
-    path: "%project_dir%/cache/logger.log"
+    path: "%project_dir%/cache/logger-%date%.log"
     levels: error,info,debug    
-
+    date_format: "Y-m-d"
 ```
 
 
@@ -99,3 +100,6 @@ $application->addCommands(
 $application->run();
 ```
 
+# Changelog
+
+#### 1.0.3 added date_format in order to have different logs names for every day

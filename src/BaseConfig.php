@@ -48,13 +48,19 @@ abstract class BaseConfig
         $this->config = array_merge(
             array(
                 'logger' => array(
-                    'path' => '%project_dir%/app/cache/logger.log',
+                    'path' => '%project_dir%/app/cache/logger-%date%.log',
                     'level' => 'info,debug,error',
+                    'date_format' => 'Y-m-d',
                 ),
             ),
             Yaml::parse(file_get_contents($this->getConfigFile()))
         );
-        $this->logFile = str_replace('%project_dir%', $this->projectDir, $this->config['logger']['path']);
+        $format = $this->config['logger']['date_format'];
+        $this->logFile = str_replace(
+            array('%project_dir%', '%date%'),
+            array($this->projectDir, date($format)),
+            $this->config['logger']['path']
+        );
         $this->levels = explode(',', trim(strtolower($this->config['logger']['level'])));
     }
 

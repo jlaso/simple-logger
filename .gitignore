@@ -7,3 +7,5 @@ composer.phar
 composer.lock
 
 cache/*.log
+
+bin

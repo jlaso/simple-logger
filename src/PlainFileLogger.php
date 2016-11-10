@@ -2,8 +2,6 @@
 
 namespace JLaso\SimpleLogger;
 
-use Symfony\Component\Yaml\Yaml;
-
 class PlainFileLogger extends BaseLogger
 {
     use SingletonTrait;

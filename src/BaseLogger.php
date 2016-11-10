@@ -2,7 +2,6 @@
 
 namespace JLaso\SimpleLogger;
 
-
 abstract class BaseLogger extends BaseConfig implements LoggerInterface
 {
     public static function debug($data)

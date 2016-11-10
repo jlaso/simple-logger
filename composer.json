@@ -11,7 +11,7 @@
             "role": "Developer"
         }
     ],
-    "version": "1.0.2",
+    "version": "1.0.3",
     "require": {
         "php": ">=5.4",
         "symfony/yaml": "*"
@@ -23,8 +23,12 @@
     },
     "autoload": {
         "psr-4": {
-            "JLaso\\SimpleLogger\\": "src/"
+            "JLaso\\SimpleLogger\\": "src/",
+            "JLaso\\SimpleLogger\\Tests\\": "Tests/"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "config": {
+        "bin-dir": "bin"
+    }
 }
