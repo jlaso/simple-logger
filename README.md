@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/jlaso/simple-logger.svg?branch=master)](https://travis-ci.org/jlaso/simple-logger)
+
 # simple-logger
 
 A simple logger system
